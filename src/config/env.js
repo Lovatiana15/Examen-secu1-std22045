@@ -1,5 +1,4 @@
 export const Env = {
-    wafJsApiUrl: "https://<URL-DU-SCRIPT-AWS-WAF>.js", 
-    wafApiKey: "<VOTRE-CLE-API-AWS-WAF>",             
-  };
-  
+  wafJsApiUrl: process.env.REACT_APP_API_URL,
+  wafApiKey: process.env.REACT_APP_API_KEY
+};
