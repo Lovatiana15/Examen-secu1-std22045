@@ -30,9 +30,9 @@ export const HumanVerification = ({ onSuccess }) => {
                 apiKey: Env.wafApiKey,
                 onSuccess: (token) => {
                     isCaptchaOpen.current = false;
-                    navigate(redirectTo); // Optionnel : redirige après la validation
+                    navigate(redirectTo); 
                     resolve(token);
-                    onSuccess(); // Signale que le CAPTCHA a été validé avec succès
+                    onSuccess(); 
                 },
             });
         });
